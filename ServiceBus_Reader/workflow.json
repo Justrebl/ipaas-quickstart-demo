@@ -1,0 +1,49 @@
+{
+  "definition": {
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+    "actions": {
+      "Parse_JSON": {
+        "inputs": {
+          "content": {
+            "content": "123-456"
+          },
+          "schema": {
+            "properties": {
+              "content": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "runAfter": {},
+        "type": "ParseJson"
+      }
+    },
+    "contentVersion": "1.0.0.0",
+    "outputs": {},
+    "triggers": {
+      "When_a_message_is_received_in_a_queue_(peek-lock)": {
+        "inputs": {
+          "host": {
+            "connection": {
+              "referenceName": "servicebus-2"
+            }
+          },
+          "method": "get",
+          "path": "/@{encodeURIComponent(encodeURIComponent('queue-guid'))}/messages/head/peek",
+          "queries": {
+            "queueType": "Main",
+            "sessionId": "None"
+          }
+        },
+        "recurrence": {
+          "frequency": "Minute",
+          "interval": 1
+        },
+        "type": "ApiConnection"
+      }
+    }
+  },
+  "kind": "Stateful"
+}
