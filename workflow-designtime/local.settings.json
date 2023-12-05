@@ -4,6 +4,11 @@
     "AzureWebJobsSecretStorageType": "Files",
     "FUNCTIONS_WORKER_RUNTIME": "node",
     "APP_KIND": "workflowapp",
-    "ProjectDirectoryPath": "/workspaces/ipaas-quickstart-demo/ProjectDirectoryPath"
+    "ProjectDirectoryPath": "/workspaces/ipaas-quickstart-demo/ProjectDirectoryPath",
+    "WORKFLOWS_TENANT_ID": "fe85910f-e6e0-43da-a1ec-9e4e94a9f6c4",
+    "WORKFLOWS_SUBSCRIPTION_ID": "fbcfc68c-3c2e-4ff7-bea4-da2642809f50",
+    "WORKFLOWS_RESOURCE_GROUP_NAME": "rg-ipaas-quickstart-demo-fc",
+    "WORKFLOWS_LOCATION_NAME": "francecentral",
+    "WORKFLOWS_MANAGEMENT_BASE_URI": "https://management.azure.com/"
   }
 }

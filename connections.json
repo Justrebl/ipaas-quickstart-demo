@@ -57,14 +57,24 @@
   },
   "serviceProviderConnections": {
     "serviceBus": {
+      "displayName": "Sb_Cntstring",
+      "parameterSetName": "connectionString",
       "parameterValues": {
         "connectionString": "@appsetting('serviceBus_connectionString')"
+      },
+      "serviceProvider": {
+        "id": "/serviceProviders/serviceBus"
+      }
+    },
+    "serviceBus-2": {
+      "parameterValues": {
+        "connectionString": "@appsetting('serviceBus_12_connectionString')"
       },
       "parameterSetName": "connectionString",
       "serviceProvider": {
         "id": "/serviceProviders/serviceBus"
       },
-      "displayName": "Sb_Cntstring"
+      "displayName": "SB_ConnectionString"
     }
   }
 }
