@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsSecretStorageType": "Files",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "APP_KIND": "workflowapp",
+    "ProjectDirectoryPath": "/home/julien-s/Laboratoire/Azure/LogicApps/ipaas-quickstart/workflow-designtime/"
+  }
+}

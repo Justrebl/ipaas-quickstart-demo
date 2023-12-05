@@ -1,0 +1,32 @@
+{
+    "name": "iPaaS Quickstart",
+    "image": "mcr.microsoft.com/devcontainers/dotnet:7.0-bullseye",
+    "features": {
+      "azure-cli": {
+        "version": "latest"
+      },
+      "ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {
+        "version": "latest"
+      },
+      "ghcr.io/devcontainers/features/java": {
+        "version": "latest"
+      }
+    },
+    "forwardPorts": ["7071"],
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "vscjava.vscode-java-pack",
+          "ms-dotnettools.csdevkit",
+          "ms-vscode.vscode-node-azure-pack",
+          "ms-azuretools.vscode-azurelogicapps",
+          "github.copilot",
+          "github.copilot-chat",
+          "azurite.azurite",
+          "humao.rest-client",
+          "postman.postman-for-vscode"
+        ]
+      }
+    },
+    "containerUser": "vscode"
+  }
