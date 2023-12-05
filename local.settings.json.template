@@ -1,0 +1,16 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "APP_KIND": "workflowapp",
+    "ProjectDirectoryPath": "/workspaces/ipaas-quickstart-demo/ProjectDirectoryPath"
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "WORKFLOWS_SUBSCRIPTION_ID": "<Your-Sub-ID>",
+    "WORKFLOWS_TENANT_ID": "<Your-Tenant-Id>",
+    "WORKFLOWS_RESOURCE_GROUP_NAME": "<Your-Resource-Group>",
+    "WORKFLOWS_LOCATION_NAME": "francecentral",
+    "WORKFLOWS_MANAGEMENT_BASE_URI": "https://management.azure.com/",
+    "serviceBus_connectionString": "<Your-Service-Bus-Connection-String>",
+    "BLOB_CONTAINER_NAME": "blob-trigger-demo"
+  }
+}

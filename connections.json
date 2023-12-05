@@ -1,0 +1,70 @@
+{
+  "managedApiConnections": {
+    "azureblob": {
+      "api": {
+        "id": "/subscriptions/fbcfc68c-3c2e-4ff7-bea4-da2642809f50/providers/Microsoft.Web/locations/francecentral/managedApis/azureblob"
+      },
+      "authentication": {
+        "type": "ManagedServiceIdentity"
+      },
+      "connection": {
+        "id": "/subscriptions/fbcfc68c-3c2e-4ff7-bea4-da2642809f50/resourceGroups/rg-ipaas-quickstart-demo-fc/providers/Microsoft.Web/connections/azureblob"
+      },
+      "connectionProperties": {
+        "authentication": {
+          "audience": "https://storage.azure.com/",
+          "type": "ManagedServiceIdentity"
+        }
+      },
+      "connectionRuntimeUrl": "https://0906caf345b9f18c.14.common.logic-francecentral.azure-apihub.net/apim/azureblob/651bd4db47fc45968f6ecb1eeb75045e"
+    },
+    "azureeventgrid": {
+      "api": {
+        "id": "/subscriptions/fbcfc68c-3c2e-4ff7-bea4-da2642809f50/providers/Microsoft.Web/locations/francecentral/managedApis/azureeventgrid"
+      },
+      "authentication": {
+        "type": "ManagedServiceIdentity"
+      },
+      "connection": {
+        "id": "/subscriptions/fbcfc68c-3c2e-4ff7-bea4-da2642809f50/resourceGroups/rg-ipaas-quickstart-demo-fc/providers/Microsoft.Web/connections/azureeventgrid"
+      },
+      "connectionProperties": {
+        "authentication": {
+          "audience": "https://management.core.windows.net/",
+          "type": "ManagedServiceIdentity"
+        }
+      },
+      "connectionRuntimeUrl": "https://0906caf345b9f18c.14.common.logic-francecentral.azure-apihub.net/apim/azureeventgrid/5131b60400fd44ccb9f795409f6a2340"
+    },
+    "servicebus-2": {
+      "api": {
+        "id": "/subscriptions/fbcfc68c-3c2e-4ff7-bea4-da2642809f50/providers/Microsoft.Web/locations/francecentral/managedApis/servicebus"
+      },
+      "authentication": {
+        "type": "ManagedServiceIdentity"
+      },
+      "connection": {
+        "id": "/subscriptions/fbcfc68c-3c2e-4ff7-bea4-da2642809f50/resourceGroups/rg-ipaas-quickstart-demo-fc/providers/Microsoft.Web/connections/servicebus"
+      },
+      "connectionProperties": {
+        "authentication": {
+          "audience": "https://servicebus.azure.net",
+          "type": "ManagedServiceIdentity"
+        }
+      },
+      "connectionRuntimeUrl": "https://0906caf345b9f18c.14.common.logic-francecentral.azure-apihub.net/apim/servicebus/1ab91c606d924222b19ff58c563e6928"
+    }
+  },
+  "serviceProviderConnections": {
+    "serviceBus": {
+      "parameterValues": {
+        "connectionString": "@appsetting('serviceBus_connectionString')"
+      },
+      "parameterSetName": "connectionString",
+      "serviceProvider": {
+        "id": "/serviceProviders/serviceBus"
+      },
+      "displayName": "Sb_Cntstring"
+    }
+  }
+}

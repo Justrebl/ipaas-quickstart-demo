@@ -1,0 +1,6 @@
+{
+  "ContainerName": {
+    "type": "String",
+    "value": "@appsetting('BLOB_CONTAINER_NAME')"
+  }
+}
