@@ -7,10 +7,10 @@
     "FUNCTIONS_WORKER_RUNTIME": "node",
     "WORKFLOWS_SUBSCRIPTION_ID": "<Your-Sub-ID>",
     "WORKFLOWS_TENANT_ID": "<Your-Tenant-Id>",
-    "WORKFLOWS_RESOURCE_GROUP_NAME": "<Your-Resource-Group>",
-    "WORKFLOWS_LOCATION_NAME": "francecentral",
-    "WORKFLOWS_MANAGEMENT_BASE_URI": "https://management.azure.com/",
-    "serviceBus_connectionString": "<Your-Service-Bus-Connection-String>",
+    "WORKFLOWS_RESOURCE_GROUP_NAME": "<Your-Resource-Group>", #Example : rg-...
+    "WORKFLOWS_LOCATION_NAME": "<Your-resource-location>", #Example : francecentral
+    "WORKFLOWS_MANAGEMENT_BASE_URI": "https://management.azure.com/", 
+    "serviceBus_connectionString": "<Your-Service-Bus-Connection-String>", #Example : Endpoint=sb://***.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=***=
     "BLOB_CONTAINER_NAME": "blob-trigger-demo"
   }
 }
